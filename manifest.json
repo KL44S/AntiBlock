@@ -1,0 +1,16 @@
+{
+  "name": "Anti Block",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "short_name": "Anti Block",
+  "icons": {
+    "48": "images/antiblock-sm.png",
+    "128": "images/antiblock-lg.png"
+  },
+  "description": "Extensión anti bloqueo de páginas pidiendo registrarse o desactivar ad-block, etc.",
+   "content_scripts": [{
+        "js": ["contentScript.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "web_accessible_resources": ["antiBlock.js"]
+}
